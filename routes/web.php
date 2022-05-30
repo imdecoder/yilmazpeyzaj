@@ -16,5 +16,5 @@ use App\Http\Controllers\Web\HomeController;
 */
 
 Route::name('web.')->group(function () {
-	Route::get('/', [HomeController::class, 'store'])->name('home.store');
+	Route::get('/', [HomeController::class, 'store'])->name('home');
 });

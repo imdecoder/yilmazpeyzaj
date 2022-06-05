@@ -1,12 +1,11 @@
 @extends('web.layouts.main')
 
-@section('title', 'Yılmaz Peyzaj')
+@section('title', 'Yılmaz Fidancılık & Peyzaj Botanik, Sulama')
 @section('description', 'Açıklama.')
 
 @section('content')
 	<!-- Banner Section -->
 	<section class="banner-section banner-one">
-
 		<div class="banner-carousel owl-theme owl-carousel">
 
 			<!-- Slide Item -->
@@ -68,7 +67,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</section>
 	<!--End Banner Section -->

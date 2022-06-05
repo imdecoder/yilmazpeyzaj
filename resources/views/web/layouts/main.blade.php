@@ -3,213 +3,34 @@
 <head>
 	<meta charset="utf-8">
 
-	<!-- Responsive Settings -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	@include('web.layouts.static.responsive')
 
 	<title>@yield('title')</title>
 	<meta name="description" content="@yield('description')">
 
-	<!-- Stylesheets -->
-	<link href="{{ asset('assets/web/css/bootstrap.css') }}" rel="stylesheet">
-	<link href="{{ asset('assets/web/css/style.css') }}" rel="stylesheet">
+	@include('web.layouts.static.stylesheets')
 
-	<!-- Responsive File -->
-	<link href="{{ asset('assets/web/css/responsive.css') }}" rel="stylesheet">
+	@include('web.layouts.static.favicon')
 
-	<link rel="shortcut icon" href="{{ asset('assets/web/images/favicon.png') }}" type="image/x-icon">
-	<link rel="icon" href="{{ asset('assets/web/images/favicon.png') }}" type="image/x-icon">
-
-	<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-	<!--[if lt IE 9]><script src="{{ asset('assets/web/js/respond.js') }}"></script><![endif]-->
+	@include('web.layouts.static.ie9')
 
 	@livewireStyles
 </head>
 <body>
 	<div class="page-wrapper">
 
-		<livewire:web.layouts.main.preloader />
+		<livewire:web.layouts.preloader />
 
 		<!-- Main Header -->
 		<header class="main-header">
-			<div class="header-top">
-				<div class="auto-container">
-					<div class="inner clearfix">
-						<div class="top-left">
-							<div class="tip-link"><a href="#"><span class="icon flaticon-play-button-1"></span> Lawn Maintenance Tips</a></div>
-							<div class="social-links">
-								<ul class="clearfix">
-									<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-									<li><a href="#"><span class="fab fa-twitter"></span></a></li>
-									<li><a href="#"><span class="fab fa-google"></span></a></li>
-									<li><a href="#"><span class="fab fa-youtube"></span></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="top-right">
-							<div class="top-links">
-								<ul class="clearfix">
-									<li><span class="icon flaticon-fast"></span>Mon-Fri: 9am to 7pm</li>
-									<li><span class="icon flaticon-placeholder-3"></span>53 Garden Street LA, USA</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<!-- Header Upper -->
-			<div class="header-upper">
-				<div class="auto-container">
-					<div class="inner-container clearfix">
+			<livewire:web.layouts.header-top />
 
-						<!--Logo-->
-						<div class="logo-box">
-							<div class="logo"><a href="index.html" title="Pruners - Gardening and Landscaping HTML Template"><img src="{{ asset('assets/web/images/logo.png') }}" alt="Pruners - Gardening and Landscaping HTML Template" title="Pruners - Gardening and Landscaping HTML Template"></a></div>
-						</div>
-						<div class="other-links clearfix">
-							<div class="info">
-								<div class="info-icon"><span class="flaticon-smartphone"></span></div>
-								<div class="phone"><a href="tel:+56789012345">(+5) 678 90 12 345</a></div>
-								<div class="call">Get Call Back <span class="icon flaticon-play-button-1"></span></div>
-							</div>
-							<div class="search-box">
-								<form method="post" action="contact.html">
-									<div class="form-group">
-										<div class="field-box">
-											<input type="search" name="search" value="" placeholder="Keyword ..." required="">
-										</div>
-										<div class="btn-box"><button type="submit" class="search-btn"><span class="flaticon-search-1"></span></button></div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--End Header Upper-->
+			<livewire:web.layouts.header-upper />
 
-			<!--Header Lower-->
-			<div class="header-lower">
-				<div class="auto-container">
-					<div class="inner clearfix">
-						<div class="nav-outer clearfix">
+			<livewire:web.layouts.header-lower />
 
-							<!--Mobile Navigation Toggler-->
-							<div class="mobile-nav-toggler">
-								<span class="icon flaticon-menu-1"></span>
-							</div>
-
-							<!-- Main Menu -->
-							<nav class="main-menu navbar-expand-md navbar-light">
-								<div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-									<ul class="navigation clearfix">
-										<li class="current">
-											<a href="{{ route('web.home') }}">
-												Anasayfa
-											</a>
-										</li>
-										<li>
-											<a href="about.html">
-												About
-											</a>
-										</li>
-										<li  class="dropdown">
-											<a href="services.html">
-												Services
-											</a>
-											<ul>
-												<li><a href="services.html">All Services</a></li>
-												<li><a href="spring-service.html">Spring Cleanup</a></li>
-												<li><a href="landscape-service.html">Landscape Installation</a></li>
-												<li><a href="garden-service.html">Garden Care</a></li>
-												<li><a href="water-service.html">Water Fountain</a></li>
-												<li><a href="hardscaping-service.html">Hardscaping</a></li>
-												<li><a href="snow-removal-service.html">Snow & Ice Removal</a></li>
-											</ul>
-										</li>
-										<li class="dropdown"><a href="gallery-grid-1.html">Projects</a>
-											<ul>
-												<li class="dropdown"><a href="gallery-grid-1.html">Grid View</a>
-													<ul>
-														<li><a href="gallery-grid-1.html">3 Columns</a></li>
-														<li><a href="gallery-grid-2.html">4 Columns</a></li>
-													</ul>
-												</li>
-												<li class="dropdown"><a href="gallery-wide-1.html">Wide View</a>
-													<ul>
-														<li><a href="gallery-wide-1.html">4 Columns</a></li>
-														<li><a href="gallery-wide-2.html">5 Columns</a></li>
-														<li><a href="gallery-wide-3.html">Masonry</a></li>
-													</ul>
-												</li>
-												<li><a href="gallery-masonry.html">Masonry</a></li>
-												<li><a href="project-single.html">Project Details</a></li>
-											</ul>
-										</li>
-										<li class="dropdown"><a href="blog-grid-1.html">Blog</a>
-											<ul>
-												<li><a href="blog-grid-1.html">Grid 2 Columns</a></li>
-												<li><a href="blog-grid-2.html">Grid 3 Columns</a></li>
-												<li><a href="blog-list.html">List View</a></li>
-												<li><a href="blog-single.html">Single Post</a></li>
-											</ul>
-										</li>
-										<li class="dropdown"><a href="appointment.html">Pages</a>
-											<ul>
-												<li><a href="appointment.html">Appointments</a></li>
-												<li><a href="coming-soon.html">Coming Soon</a></li>
-												<li><a href="faq.html">Faq’s</a></li>
-												<li><a href="reviews.html">Reviews</a></li>
-												<li><a href="error-page.html">404</a></li>
-												<li class="dropdown"><a href="shop.html">Shop</a>
-													<ul>
-														<li><a href="shop.html">Products</a></li>
-														<li><a href="shop-single.html">Single Product</a></li>
-														<li><a href="shopping-cart.html">Shopping Cart</a></li>
-														<li><a href="checkout.html">Checkout</a></li>
-														<li><a href="my-account.html">My Account</a></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li><a href="contact.html">Contact</a></li>
-									</ul>
-								</div>
-							</nav>
-						</div>
-
-						<div class="more-links clearfix">
-							<div class="cart-btn"><a href="shopping-cart.html"><span class="flaticon-shopping-bag-2"></span></a></div>
-							<div class="estimate-btn"><a href="contact.html"><span class="icon flaticon-business-1"></span>Free Estimate <span class="arrow flaticon-play-button-1"></span></a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--End Header Lower-->
-
-			<!-- Sticky Header  -->
-			<div class="sticky-header">
-				<div class="auto-container clearfix">
-					<!--Logo-->
-					<div class="logo pull-left">
-						<a href="index.html" title=""><img src="{{ asset('assets/web/images/sticky-logo.png') }}" alt="" title=""></a>
-					</div>
-					<!--Right Col-->
-					<div class="pull-right clearfix">
-						<!-- Main Menu -->
-						<nav class="main-menu clearfix">
-							<!--Keep This Empty / Menu will come through Javascript-->
-						</nav><!-- Main Menu End-->
-
-						<!--Contact Btn-->
-						<div class="contact-link">
-							<a href="contact.html" class="theme-btn btn-style-three"><span class="btn-title">Get Quote <i class="arrow flaticon-play-button-1"></i></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Sticky Menu -->
+			<livewire:web.layouts.sticky-header />
 
 			<!-- Mobile Menu  -->
 			<div class="mobile-menu">
@@ -217,8 +38,13 @@
 				<div class="close-btn"><span class="icon flaticon-letter-x"></span></div>
 
 				<nav class="menu-box">
-					<div class="nav-logo"><a href="index.html"><img src="{{ asset('assets/web/images/nav-logo.png') }}" alt="" title=""></a></div>
+					<div class="nav-logo">
+						<a href="index.html">
+							<img src="{{ asset('assets/web/images/nav-logo.png') }}" alt="" title="">
+						</a>
+					</div>
 					<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+
 					<!--Social Links-->
 					<div class="social-links">
 						<ul class="clearfix">
@@ -230,7 +56,9 @@
 						</ul>
 					</div>
 				</nav>
-			</div><!-- End Mobile Menu -->
+			</div>
+			<!-- End Mobile Menu -->
+
 		</header>
 		<!-- End Main Header -->
 

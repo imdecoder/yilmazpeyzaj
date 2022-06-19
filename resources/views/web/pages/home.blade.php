@@ -4,6 +4,7 @@
 @section('description', 'Açıklama.')
 
 @section('content')
+
 	<!-- Banner Section -->
 	<section class="banner-section banner-one">
 		<div class="banner-carousel owl-theme owl-carousel">
@@ -1219,4 +1220,5 @@
 			</div>
 		</div>
 	</section>
+
 @endsection

@@ -1,0 +1,8 @@
+.call-to-action .info-col ul li:after {
+	content: 'VEYA';
+	top: 10px;
+	width: 45px;
+    height: 45px;
+    line-height: 45px;
+	margin-left: -12px;
+}

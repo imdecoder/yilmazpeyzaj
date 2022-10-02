@@ -90,8 +90,8 @@
 													</a>
 												</li>
 												<li>
-													<a href="mailto:bilgi@yilmazpeyzaj.com">
-														bilgi@yilmazpeyzaj.com
+													<a href="mailto:yilmazfidancilik55@gmail.com">
+														yilmazfidancilik55@gmail.com
 													</a>
 												</li>
 											</ul>

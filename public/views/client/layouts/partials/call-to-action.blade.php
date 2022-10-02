@@ -12,14 +12,14 @@
 				<div class="inner clearfix">
 					<ul class="info clearfix">
 						<li>
-							<a href="#">
+							<a href="{{ site_url('iletisim') }}">
 								<span>Mesaj Gönder</span>
 								<i class="arrow flaticon-play-button-1"></i>
 							</a>
 						</li>
 						<li>
-							<a href="tel:+905555555555">
-								<span>0 (555) 555 5555</span>
+							<a href="tel:+905550804557">
+								<span>0 (555) 080 45 57</span>
 							</a>
 						</li>
 					</ul>

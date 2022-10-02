@@ -41,9 +41,9 @@
 							Derecik Mah. Recep Tayyip Erdoğan Bulv. Yol Kenarı, İlkadım/Samsun
 						</li>
 						<li>
-							<a href="mailto:bilgi@yilmazpeyzaj.com">
+							<a href="mailto:yilmazfidancilik55@gmail.com">
 								<span class="icon flaticon-envelope-1"></span>
-								bilgi@yilmazpeyzaj.com
+								yilmazfidancilik55@gmail.com
 							</a>
 						</li>
 					</ul>

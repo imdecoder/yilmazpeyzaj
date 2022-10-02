@@ -55,11 +55,17 @@
 											Tüm Referanslar
 										</a>
 									</li>
-									<li>
-										<a href="{{ site_url('referanslar/referans-adi') }}">
-											Referans Adı
-										</a>
-									</li>
+
+									@foreach ($credentials['header'] as $credential)
+
+										<li>
+											<a href="{{ site_url('referanslar/' . $credential->slug) }}">
+												{!! $credential->title !!}
+											</a>
+										</li>
+
+									@endforeach
+
 								</ul>
 							</li>
 							<li class="{{ segments(0) == 'blog' ? 'current' : null }}">

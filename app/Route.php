@@ -48,6 +48,7 @@ $app->router->group('/magaza', function ($router) {
 });
 
 $app->router->get('/iletisim', 'Client.Contact@index');
+$app->router->get('/teklif-iste', 'Client.Offer@index');
 $app->router->get('/sss', 'Client.Faq@index');
 
 $app->router->group('/admin', function ($router) {

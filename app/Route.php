@@ -7,6 +7,11 @@ $app->router->notFound(function () {
 	return $error->index();
 });
 
+$app->router->error(function () {
+	$error = new Error();
+	return $error->index();
+});
+
 $app->router->get('/', 'Client.Home@index');
 $app->router->get('/hakkimizda', 'Client.About@index');
 

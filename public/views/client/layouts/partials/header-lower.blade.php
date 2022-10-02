@@ -32,26 +32,17 @@
 											Tüm Hizmetler
 										</a>
 									</li>
-									<li>
-										<a href="{{ site_url('hizmetler/bordur-tas-isleri') }}">
-											Bordur Taş İşleri
-										</a>
-									</li>
-									<li>
-										<a href="{{ site_url('hizmetler/cim-ve-bahce-bakimi') }}">
-											Çim & Bahçe Bakımı
-										</a>
-									</li>
-									<li>
-										<a href="{{ site_url('hizmetler/cit-yapimi') }}">
-											Çit Yapımı
-										</a>
-									</li>
-									<li>
-										<a href="{{ site_url('hizmetler/dikim-ve-budama') }}">
-											Dikim & Budama
-										</a>
-									</li>
+
+									@foreach ($services['header'] as $service)
+
+										<li>
+											<a href="{{ site_url('hizmetler/' . $service->slug) }}">
+												{!! $service->title !!}
+											</a>
+										</li>
+
+									@endforeach
+
 								</ul>
 							</li>
 							<li class="dropdown {{ segments(0) == 'referanslar' ? 'current' : null }}">
@@ -97,9 +88,9 @@
 					</a>
 				</div>
 				<div class="estimate-btn">
-					<a href="{{ site_url('ucretsiz-hesapla') }}">
-						<span class="icon flaticon-business-1"></span>
-						Hesaplama Aracı
+					<a href="{{ site_url('teklif-iste') }}">
+						<span class="icon flaticon-smartphone-3"></span>
+						Teklif İste
 						<span class="arrow flaticon-play-button-1"></span>
 					</a>
 				</div>

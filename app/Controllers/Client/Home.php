@@ -8,6 +8,6 @@ class Home extends Client
 {
 	public function index()
 	{
-		return $this->view('client.pages.home');
+		return $this->view('client.pages.home', $this->data);
 	}
 }

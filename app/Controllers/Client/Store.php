@@ -8,27 +8,27 @@ class Store extends Client
 {
 	public function index()
 	{
-		return $this->view('client.pages.store.list');
+		return $this->view('client.pages.store.list', $this->data);
 	}
 
 	public function product()
 	{
-		return $this->view('client.pages.store.product');
+		return $this->view('client.pages.store.product', $this->data);
 	}
 
 	public function category()
 	{
-		return $this->view('client.pages.store.category');
+		return $this->view('client.pages.store.category', $this->data);
 	}
 
 	public function tag()
 	{
-		return $this->view('client.pages.store.tag');
+		return $this->view('client.pages.store.tag', $this->data);
 	}
 
 	public function cart()
 	{
-		return $this->view('client.pages.store.cart');
+		return $this->view('client.pages.store.cart', $this->data);
 	}
 
 	public function account_login()

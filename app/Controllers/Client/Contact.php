@@ -8,6 +8,6 @@ class Contact extends Client
 {
 	public function index()
 	{
-		return $this->view('client.pages.contact');
+		return $this->view('client.pages.contact', $this->data);
 	}
 }

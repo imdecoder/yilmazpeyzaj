@@ -8,6 +8,6 @@ class Error extends Client
 {
 	public function index()
 	{
-		return $this->view('client.pages.error');
+		return $this->view('client.pages.error', $this->data);
 	}
 }

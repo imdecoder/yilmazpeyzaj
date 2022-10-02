@@ -8,6 +8,6 @@ class About extends Client
 {
 	public function index()
 	{
-		return $this->view('client.pages.about');
+		return $this->view('client.pages.about', $this->data);
 	}
 }

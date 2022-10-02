@@ -8,6 +8,6 @@ class Faq extends Client
 {
 	public function index()
 	{
-		return $this->view('client.pages.faq');
+		return $this->view('client.pages.faq', $this->data);
 	}
 }

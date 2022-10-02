@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use Core\Controller;
-use stdClass;
+use PDO;
 
 class Client extends Controller
 {
@@ -18,7 +18,7 @@ class Client extends Controller
 			FROM services
 			WHERE status_id = 1 AND deleted_at IS NULL
 			ORDER BY priority ASC, title ASC
-		");
+		", PDO::FETCH_OBJ);
 
 		if ($services->rowCount())
 		{

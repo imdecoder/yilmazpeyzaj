@@ -1,7 +1,7 @@
 @extends('client.layouts.main')
 
 @section('title', 'Yılmaz Fidancılık & Peyzaj Botanik, Sulama')
-@section('description', 'Açıklama.')
+@section('description', 'Fidancılık & Peyzaj Botanik, Sulama.')
 
 @section('content')
 

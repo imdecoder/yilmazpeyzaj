@@ -1,5 +1,8 @@
 @extends('client.layouts.main')
 
+@section('title', 'Ürün Adı - Yılmaz Peyzaj')
+@section('description', 'Ürün açıklaması.')
+
 @section('content')
 
 	<!-- Banner Section -->

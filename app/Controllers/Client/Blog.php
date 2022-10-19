@@ -10,4 +10,9 @@ class Blog extends Client
 	{
 		return $this->view('client.pages.blog.list', $this->data);
 	}
+
+	public function detail()
+	{
+		return $this->view('client.pages.blog.detail', $this->data);
+	}
 }

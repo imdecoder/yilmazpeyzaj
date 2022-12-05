@@ -12,6 +12,9 @@ $app->router->error(function () {
 	return $error->index();
 });
 
+/**
+ * Client Routes
+ */
 $app->router->get('/', 'Client.Home@index');
 $app->router->get('/hakkimizda', 'Client.About@index');
 
@@ -51,6 +54,9 @@ $app->router->get('/iletisim', 'Client.Contact@index');
 $app->router->get('/teklif-iste', 'Client.Offer@index');
 $app->router->get('/sss', 'Client.Faq@index');
 
+/**
+ * Admin Routes
+ */
 $app->router->group('/admin', function ($router) {
 	$router->get('/', function () {
 		header('Location: ' . site_url('admin/dashboard'));
@@ -63,6 +69,9 @@ $app->router->group('/admin', function ($router) {
 	$router->get('/dashboard', 'Admin.Dashboard@index');
 }, ['before' => 'UserCheckAuth']);
 
+/**
+ * API Routes
+ */
 $app->router->group('/api', function ($router) {
 
 	// TODO

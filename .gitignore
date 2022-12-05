@@ -1,4 +1,4 @@
 vendor
 composer.lock
 .env.php
-public/cache/*
+public/cache/*.php
